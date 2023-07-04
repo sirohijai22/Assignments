@@ -27,4 +27,4 @@
 - Higher amount of loans were verified more than less amount, thus loans with lesser amount are more liekely to be charged off.
 
 ## Contact
-Created by Aishwarya Pursala - feel free to contact me!
+Created by Jai Sirohi - feel free to contact me! 8384044903
