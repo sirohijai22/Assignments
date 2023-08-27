@@ -1,39 +1,35 @@
 # Project Name
-> Surprise Housing Assignment
+> Gesture Recognition
 
 
 ## Table of Contents
 * [General Info](#general-information)
+* [Dataset](#dataset)
 * [Technologies Used](#technologies-used)
 * [Conclusions](#conclusions)
 * [Contact](#contact)
 
 
 ## General Information
-- A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. For the same purpose, the company has collected a data set from the sale of houses in Australia
-- Requirements:
-	- Which variables are significant in predicting the price of a house, and
-	- How well those variables describe the price of a house.
-- What is the business probem that your project is trying to solve?
-	- To find best required features and how they predict house prices, sp that company can manipulate their strategy.
-- What is the dataset that is being used?
-	- Housing Dataset
+- Develop a feature in the smart-TV that can recognise five different gestures performed by the user which will help users control the TV without using a remote.
+The gestures are continuously monitored by the webcam mounted on the TV. Each gesture corresponds to a specific command:
+
+Thumbs up:  Increase the volume
+Thumbs down: Decrease the volume
+Left swipe: 'Jump' backwards 10 seconds
+Right swipe: 'Jump' forward 10 seconds  
+Stop: Pause the movie
+
+##Dataset
+The training data consists of a few hundred videos categorised into one of the five classes. Each video (typically 2-3 seconds long) is divided into a sequence of 30 frames(images). These videos have been recorded by various people performing one of the five gestures in front of a webcam - similar to what the smart TV will use. 
+Each row of the CSV file represents one video and contains three main pieces of information - the name of the subfolder containing the 30 images of the video, the name of the gesture and the numeric label (between 0-4) of the video.
 
 ## Technologies Used
-- Numpy
-- Pandas
-- Linear, Ridge, Lasso Regression
+- Convolution Neural Network
+- Recurrent Neural Network
 
 ## Conclusions
-- Lasso Regression is finalized to model this problem.
-- Below are the top 5 features which help in predicting Prices.
-	1. GrLivArea
-	2. TotalBsmtSF
-	3. 1stFlrSF
-	4. BedroomAbvGr
-	5. HouseAge
-- Model is Robust and can be generalisable as it has decent scores.
-
+-
 
 ## Contact
 Created by [@sirohijai22] - feel free to contact me!
