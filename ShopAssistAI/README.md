@@ -5,6 +5,7 @@ Shop Assist AI Chatbot
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
+* [Usage](#usage)
 * [Contact](#contact)
 
 
@@ -18,6 +19,10 @@ Openai API is being used but with certain instructions to create a human like in
 - Openai
 - Flask
 - Pandas
+
+## Usage
+- Run the app.py
+- Visit address
 
 ## Contact
 Created by [@sirohijai22] - feel free to contact me!
