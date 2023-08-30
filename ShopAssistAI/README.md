@@ -5,7 +5,6 @@ Shop Assist AI Chatbot
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
 * [Contact](#contact)
 
 
