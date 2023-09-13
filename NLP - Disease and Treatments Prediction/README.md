@@ -1,5 +1,5 @@
 # Project Name
-> Detect Melanoma Skin Cancer using CNN model
+Detect Diseases and Treatments from Sentences using NLP
 
 
 ## Table of Contents
@@ -9,40 +9,31 @@
 * [Acknowledgements](#acknowledgements)
 
 ## General Information
-- To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. 
-- A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
-- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). 
-- All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
-- The data set contains the following diseases:
-Actinic keratosis
-Basal cell carcinoma
-Dermatofibroma
-Melanoma
-Nevus
-Pigmented benign keratosis
-Seborrheic keratosis
-Squamous cell carcinoma
-Vascular lesion
+Predict name of Diseases and Treatments from a given sentence.
+Done using Custom NER (Name Entity Recognition) technique, also known as Conditional Random Field (CRF)
+For Ex: 
+“The patient was a 62-year-old man with squamous cell lung cancer, which was first successfully treated by a combination of radiation therapy and chemotherapy.”
+A person with a non-medical background cannot understand the various medical terms. We have taken a simple sentence from a medical data set to understand the problem and where you can understand the terms ‘cancer’ and ‘chemotherapy’. 
+This model is built just to do this, to predict the diseases and treatments.
 
+- Features are defined which are required in CRF.
+- Some fetures are :
+    1. Whether the previous word's pos is a preposition.
+    2. Whether the previous word is a NOUN and is written in Capital
+    3. Whether the current word is NOUN.
+    4. And so on
 
 ## Conclusions
-- Model 3 has a High Training and Validation Accuracy
-- Although 
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
+- Using the test dataset made from features set 2, we were able to predict 98 combinations of Diseases and Treatments
+  - Got the accuracy of 90.5%
+- In next attempt the model was built using only those sentences which have either 'T' or 'D' label present in sentences, and this model gave accuracy of 85%, and predicted 154 combinations of Diseases and Treatments.
 
 ## Technologies Used
-- Keras
-- Tensor Flow
-- Augmentor
+- sklearn-crfsuite
+- Spacy
+- pycrf
 - Numpy
 - Pandas
-- Glob
-- PIL
-- os
-- pathlib
-
 
 ## Contact
 Created by [@sirohijai22] - feel free to contact me!
