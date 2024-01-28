@@ -33,7 +33,11 @@ You will be doing topic modelling on the .json data provided by the company. Sin
 
 
 ## Technologies Used
-
+- NLTK
+- Spacy
+- WordCloud
+- SkLearn
+- NMF
 
 ## Contact
 Created by [@sirohijai22] - feel free to contact me!
